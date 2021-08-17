@@ -1,0 +1,24 @@
+body{
+    background-color: silver;
+}
+    
+.container{
+    padding-top:150px;
+    padding-left:500px;
+
+
+}
+.brief{
+    color: rgb(33, 48, 4);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.facebook{
+    color: rgb(0, 255, 13);
+    border-top: skyblue;
+    border-bottom: skyblue;
+    border-left: skyblue;
+}
+.youtube{
+    color: red;
+}
