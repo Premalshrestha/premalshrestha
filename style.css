@@ -3,11 +3,14 @@
     padding:0;
 }
 body{
-    background-image: url("hbd1.png");
+    background-image: url('hbd1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
+}
+.to{
+    margin-left: 40%;
 }
 .lettercount{
     display:flex;
@@ -15,26 +18,31 @@ body{
 .lettercount .letter{
     width: 100%;
     font-weight: 880;
-    font-size: 7vw;
+    font-size: 10vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     position: relative;
     top: 9vh;
 }
 .l1, .l3, .l5, .l7,.l9,.l11 ,.l13{
-    animation: anim1 1s cubic-bezier(0.5, 0.05,1,0.5) alternate infinit;
-    color: #e8d658;
+    animation-name:anim1; 
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    color: rgb(228, 135, 135);
 }
 .l2, .l4, .l6, .l8,.l10,.l12 {
-    animation: anim2 1s cubic-bezier(0.5, 0.05,1,0.5) alternate infinit;
-    color: #fff;
+    animation: anim2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color: rgb(103, 211, 230);
 }
 @keyframes anim1{
     from{
         transform: translateY(0);
     }
     to{
-        transform: translateY(90vh) rotate(720deg);
+        transform: translateY(80vh) rotate(720deg);
     }
     
 }
@@ -43,7 +51,13 @@ body{
         transform: translateY(0);
     }
     to{
-        transform: translateY(90vh) rotate(-720deg);
+        transform: translateY(80vh) rotate(-720deg);
     }
     
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 0;
+
 }
