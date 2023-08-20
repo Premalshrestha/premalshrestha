@@ -1,112 +1,49 @@
-:root{
-    --desktop-color: #1D2036;
-    --button-color: #2D445A;
-    --text-color: #FFFFFF;
-
-    
-}
-*,
-*::after,
-*::before{
-    box-sizing: border-box;
-}
-@media all and (min-width:640px ){
-body{
+*{
     margin: 0;
-    font-family: "Inter","JejuGothic";
-    background: #1D2036;
-    padding: 1.5em;
+    padding:0;
 }
+body{
+    background-image: url('hbd1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
-nav{
-    position: absolute;
-    left: 55%;
-    top: 7%;
-    font-size: 200%; 
-    
-        
 }
-nav ul{
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    list-style: none;
-  
+.lettercount{
+    display:flex;
 }
-nav ul li a{
-    font-family: "Inter";
-    font-weight:bold;
-    color: #FFFFFF;
-    text-decoration: none; 
-}
-.insta{
-    position: absolute;
-    width: 7%;
-    height: 90px;
-    left: 24%;
-    top: 550px;
-    border-radius: 25px;
-}
-.fb{
-    position: absolute;
-    width: 7%;
-    height: 79px;
-    left: 15%;
-    top: 550px;
-    border-radius: 88px;
-}
-.tweeter{
-    position: absolute;
-    width: 7%;
-    height: 90px;
-    left: 33%;
-    top: 550px;
-    border-radius: 60px;
-}
-section{
-    position: absolute;
-    width: 50%;
-    height: 269px;
-    left: 15%;
-    top: 150px;
-    font-family: 'JejuGothic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 4px;
-    color: #FDD5D5;
-}
-
-.button{
-
-   
-    padding: 21px 39px;
-    border-radius: 60px;
-    display: inline-block;
-    font-family: 'JejuGothic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    color: #FFFFFF;
+.lettercount .letter{
+    width: 100%;
+    font-weight: 880;
+    font-size: 7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    justify-content: center;
-
+    position: relative;
+    top: 9vh;
+}
+.l1, .l3, .l5, .l7,.l9,.l11 ,.l13{
+    animation: anim1 1s cubic-bezier(0.5, 0.05,1,0.5) alternate infinit;
+    color: #e8d658;
+}
+.l2, .l4, .l6, .l8,.l10,.l12 {
+    animation: anim2 1s cubic-bezier(0.5, 0.05,1,0.5) alternate infinit;
+    color: #fff;
+}
+@keyframes anim1{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(90vh) rotate(720deg);
+    }
     
-    position: absolute;
-    width: 50%;
-    height: 32%;
-    left: 10%;
-    top: 330px;
 }
-.button.txt{
-    background: var(--button-color);
-    text-decoration: none;
-}
-.photo{
-    position: absolute;
-    width:50%;
-    height: 80%;
-    left: 40%;
-    top: 100px;
-}
+@keyframes anim2{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(90vh) rotate(-720deg);
+    }
+    
 }
