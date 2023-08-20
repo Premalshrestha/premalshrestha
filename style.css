@@ -9,8 +9,13 @@ body{
     background-attachment: fixed;
 
 }
+.c1{
+    font-size: larger;
+    margin-left: 20px;
+    padding-left: 10vh;
+}
 .to{
-    margin-left: 40%;
+    margin-left: 30%;
 }
 .lettercount{
     display:flex;
@@ -53,11 +58,24 @@ body{
     to{
         transform: translateY(80vh) rotate(-720deg);
     }
-    
+
 }
-.container{
-    position: relative;
-    width: 100%;
-    height: 0;
+a:visited{
+    color:rgb(37, 29, 105);
+    text-decoration: none;
+}
+.click{
+    
+    text-align: end;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+
+.img{
+    width: 70px;
+    height: 120px;
+    padding-left: 30px;
+    margin-left: 15em;
 
 }
