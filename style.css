@@ -1,82 +1,117 @@
-*{
-    margin: 0;
-    padding:0;
+:root{
+    --desktop-color: #1D2036;
+    --button-color: #2D445A;
+    --text-color: #FFFFFF;
+
+    
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
 }
 body{
-    background-image: url('hbd1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    margin: 0;
+    font-family: "Inter","JejuGothic";
+    background: #1D2036;
+    height: 1700;
+    width: 1018;
 }
-.c1{
-    font-size: larger;
-    margin-left: 20px;
-    padding-left: 10vh;
-}
-.to{
-    margin-left: 30%;
-}
-.lettercount{
-    margin-left: 10%;
-    display:flex;
-    width: 80%;
-}
-.lettercount .letter{
-    
-    font-weight: 880;
-    font-size: 8vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    position: relative;
-    top: 9vh;
-}
-.l1, .l3, .l5, .l7,.l9,.l11 ,.l13{
-    animation-name:anim1; 
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-
-    color: rgb(228, 135, 135);
-}
-.l2, .l4, .l6, .l8,.l10,.l12 {
-    animation: anim2;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    color: rgb(103, 211, 230);
-}
-@keyframes anim1{
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(80vh) rotate(720deg);
-    }
+header{
+    background: #1D2036;
+    height: 10vh;
+    width: 100%;
     
 }
-@keyframes anim2{
-    from{
-        transform: translateY(0);
-    }
-    to{
-        transform: translateY(80vh) rotate(-720deg);
-    }
-
+nav{
+    position: absolute;
+    width: 808px;
+    height: 31px;
+    left: 804px;
+    top: 40px;
+    font-size: larger; 
+    
+        
 }
-a:visited{
-    color:rgb(37, 29, 105);
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+  
+}
+nav ul li a{
+    font-family: "Inter";
+    left: 300px;
+    font-weight: 700;
+    font-size:20px;
+    color: #FFFFFF;
+    text-decoration: none; 
+}
+.insta{
+    position: absolute;
+    width: 91.65px;
+    height: 90px;
+    left: 325px;
+    top: 550px;
+    border-radius: 25px;
+}
+.fb{
+    position: absolute;
+    width: 91.65px;
+    height: 79px;
+    left: 203px;
+    top: 550px;
+    border-radius: 88px;
+}
+.tweeter{
+    position: absolute;
+    width: 91.65px;
+    height: 90px;
+    left: 443.29px;
+    top: 550px;
+    border-radius: 60px;
+}
+section{
+    position: absolute;
+    width: 400px;
+    height: 269px;
+    left: 234px;
+    top: 150px;
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 4px;
+    color: #FDD5D5;
+}
+
+.button{
+   
+    padding: 21px 39px;
+    border-radius: 60px;
+    display: inline-block;
+    font-family: 'JejuGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    color: #FFFFFF;
+
+    
+    position: absolute;
+    width: 352px;
+    height: 88px;
+    left: 100px;
+    top: 330px;
+}
+.button.txt{
+    background: var(--button-color);
     text-decoration: none;
 }
-.click{
-    
-    text-align: end;
-    font-size: 20px;
-    margin-right: 5px;
-    color:wheat;
-}
-
-
-.img{
-    padding-left: 30px;
-    margin-left: 15em;
-
+.photo{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 450px;
+    top: 100px;
 }
